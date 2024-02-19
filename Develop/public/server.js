@@ -12,11 +12,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get('/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/notes.html'));
+    res.sendFile(path.join(__dirname, './', 'notes.html'));
 });
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, './', 'index.html'));
 });
 
 app.get('/api/notes', (req, res) => {
@@ -37,6 +37,19 @@ app.post('/api/notes', (req, res) => {
         fs.writeFile(path.join(__dirname, 'db', 'db.json'), JSON.stringify(notes, null, 2), err => {
             if (err) throw  err;
             res.json(newNote);
+        });
+    });
+});
+
+app.delete('/api/notes/:id', (req, res) => {
+    const noteId = parseInt(req.params.id);
+    fs.readFile(path.join(__dirname, 'db', 'db.json'), 'utf8', (err, data) => {
+        if (err) throw err;
+        let notes = JSON.parse(data);
+        notes = notes.filter(note => note.id !== noteId);
+        fs.writeFile(path.join(__dirname, 'db', 'db.json'), JSON.stringify(notes, null, 2), err => {
+            if (err) throw err;
+            res.json({ message: 'Note deleted' });
         });
     });
 });
