@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', () => {
+
 let noteForm;
 let noteTitle;
 let noteText;
@@ -192,3 +194,5 @@ if (window.location.pathname === '/notes') {
 }
 
 getAndRenderNotes();
+
+});
