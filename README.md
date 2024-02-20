@@ -38,7 +38,7 @@ THEN that note appears in the right-hand column and a "New Note" button appears 
 WHEN I click on the "New Note" button in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column and the button disappears
 
-## :tools: Installation
+## :hammer: Installation
 * Run an npm i and then open your terminal in the ad-summitatem directory.  Execute the command "node server.js" in the terminal, then, go to "localhost:3000" in your browser to access and use the application.
 
 ## :link: Links
