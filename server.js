@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 
-app.use('/api/notes', noteRoutes);
+app.use('/ad-summitatem/api/notes', noteRoutes);
 app.use('/', htmlRoutes);
 
 app.listen(PORT, () => {
