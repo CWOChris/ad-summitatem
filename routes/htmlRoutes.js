@@ -3,7 +3,7 @@ const path = require('path');
 
 const router = express.Router();
 
-router.get('"/ad-summitatem/public/notes.html"', (req, res) => {
+router.get('/ad-summitatem/public/notes.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'notes.html'));;
 });
 
