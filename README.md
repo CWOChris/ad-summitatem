@@ -59,6 +59,11 @@ This project is licensed under the MIT license. https://opensource.org/licenses/
 * ![Express.js](https://img.shields.io/badge/Express.js-4.17.1-blue)
 * ![UUID](https://img.shields.io/badge/UUID-9.0.1-blue)
 
+## :camera: Screenshots
+![Screenshot of Application](/public/assets/img/main.png)
+![Screenshot of Application](/public/assets/img/notes1.png)
+![Screenshot of Application](/public/assets/img/notes2.png)
+
 ## :unlock: Contributing
 * Anyone may freely contribute to the project in any useful and meaningful way to improve it.
 
