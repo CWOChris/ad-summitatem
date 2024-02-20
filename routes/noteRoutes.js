@@ -3,14 +3,14 @@ const fs = require('fs');
 const { v4: uuidv4 } = require('uuid');
 const router = express.Router();
 
-router.get('/ad-summitatem/api/notes', (req, res) => {
+router.get('/', (req, res) => {
     fs.readFile('../db.json', 'utf8', (err, data) => {
         if (err) throw err;
         res.json(JSON.parse(data));
     });
 });
 
-router.post('/ad-summitatem/api/notes', (req, res) => {
+router.post('/', (req, res) => {
     fs.readFile('../db.json', 'utf8', (err, data) => {
         if (err) throw err;
         const notes = JSON.parse(data);
@@ -24,7 +24,7 @@ router.post('/ad-summitatem/api/notes', (req, res) => {
     });
 });
 
-router.delete('/ad-summitatem/api/notes/:id', (req, res) => {
+router.delete('/:id', (req, res) => {
     const noteId = req.params.id;
     fs.readFile('../db.json', 'utf8', (err, data) => {
         if (err) throw err;
