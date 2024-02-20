@@ -1,4 +1,7 @@
-# Note Taker Starter Code
+# Note Taker Application "Ad Summitatem" is Latin for "To the Top"
+In the context, "To the Top" is referring to the first note created by the user being saved to the top on the left of the screen.
+
+![]
 
 ## Acceptance Criteria
 
