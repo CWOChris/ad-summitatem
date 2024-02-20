@@ -3,14 +3,14 @@ const fs = require('fs');
 const { v4: uuidv4 } = require('uuid');
 const router = express.Router();
 
-router.get('/', (req, res) => {
+router.get('/api/notes', (req, res) => {
     fs.readFile('./db.json', 'utf8', (err, data) => {
         if (err) throw err;
         res.json(JSON.parse(data));
     });
 });
 
-router.post('/', (req, res) => {
+router.post('/api/notes', (req, res) => {
     fs.readFile('./db.json', 'utf8', (err, data) => {
         if (err) throw err;
         const notes = JSON.parse(data);
@@ -24,7 +24,7 @@ router.post('/', (req, res) => {
     });
 });
 
-router.delete('/:id', (req, res) => {
+router.delete('/api/notes/:id', (req, res) => {
     const noteId = req.params.id;
     fs.readFile('./db.json', 'utf8', (err, data) => {
         if (err) throw err;
