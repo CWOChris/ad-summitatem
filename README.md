@@ -1,13 +1,14 @@
-# Ad Summitatem
+# :memo: Ad Summitatem :memo:
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-## Description
+## :bulb: Description
 A simple note taker that saves notes to an express server.
 
 
-## Table of Contents
+## :bookmark: Table of Contents
 * [Acceptance Criteria](#acceptance-criteria)
 * [Installation](#installation)
+* [Links](#links)
 * [Credits](#credits)
 * [License](#license)
 * [Badges](#badges)
@@ -17,7 +18,7 @@ A simple note taker that saves notes to an express server.
 * [Questions](#questions)
 * [Badges](#badges)
 
-## Acceptance Criteria
+## :bulb: Acceptance Criteria
 
 AS A small business owner
 I WANT to be able to write and save notes
@@ -37,13 +38,17 @@ THEN that note appears in the right-hand column and a "New Note" button appears 
 WHEN I click on the "New Note" button in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column and the button disappears
 
-## Installation
+## :tools: Installation
 * Run an npm i and then open your terminal in the ad-summitatem directory.  Execute the command "node server.js" in the terminal, then, go to "localhost:3000" in your browser to access and use the application.
 
-## Credits
+## :link: Links
+:computer: [GitHub Repository](https://github.com/CWOChris/ad-summitatem)
+:computer: [Deployed Application](https://CWOChris.github.io/ad-summitatem)
+
+## :trophy: Credits
 * @CWOChris created this using code from mini-project in Module 11 from class and starter code provided with assignment.
 
-## License
+## :ticket: License
 This project is licensed under the MIT license. https://opensource.org/licenses/MIT
 
 ## :hammer: Tools
@@ -54,16 +59,10 @@ This project is licensed under the MIT license. https://opensource.org/licenses/
 * ![Express.js](https://img.shields.io/badge/Express.js-4.17.1-blue)
 * ![UUID](https://img.shields.io/badge/UUID-9.0.1-blue)
 
-## Features
-* 
+## :unlock: Contributing
+* Anyone may freely contribute to the project in any useful and meaningful way to improve it.
 
-## Contributing
-* Anyone may freely contribute to the project.
-
-## Tests
-* NA
-
-## Questions
+## :question: Questions
 * If you have any questions, you can reach me at c.w.rob2024@gmail.com or visit my GitHub profile at [CWOChris](https://github.com/CWOChris).
 
-## Generated README.md was created by @CWOChris
+## :factory: Generated README.md was created by @CWOChris
